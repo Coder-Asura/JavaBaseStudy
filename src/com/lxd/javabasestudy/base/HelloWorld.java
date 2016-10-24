@@ -6,6 +6,9 @@ package com.lxd.javabasestudy.base;
  *              Hello World
  *              </p>
  *              <p>
+ *              http://www.runoob.com/java/java-basic-syntax.html
+ *              </p>
+ *              <p>
  *              一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。
  *              </p>
  *              <p>
@@ -30,7 +33,21 @@ public class HelloWorld {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(str);
+		// System.out.println(str);
+		confession();
+	}
+
+	static Grass grass = new Grass();
+	static Wind wind = new Wind();
+	static We we = new We();
+	static EveryThing everyThing = new EveryThing();
+
+	public static void confession() {
+		while (grass.bearItsSeed() && wind.shakeItsleaves()) {
+			we.standingUp();
+			we.Slient();
+			everyThing.fine();
+		}
 	}
 
 }
